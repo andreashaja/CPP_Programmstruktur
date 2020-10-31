@@ -17,6 +17,7 @@
 #include <iostream>
 #include <string>
 #include <cstdlib>
+#include <cmath>
 
 // Liste aller Präprozessor-Symbole
 #define IS_SCIENTIFIC
