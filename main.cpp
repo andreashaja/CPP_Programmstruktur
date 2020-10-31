@@ -1,3 +1,18 @@
+/* ---------------------------------------------------------------------
+ * The Fearless Engineer - Programmieren und Elektronik
+ * Copyright (C) 2020, Dr. Andreas Haja.  
+ *
+ * Zweck : Entwicklung eines Taschenrechners mit optionalem wissenschaftlichen Modus
+ *         Lernziele sind das Einlesen und Verarbeiten von Parametern vom Terminal 
+ *         sowie die Verwendung des Präprozessors zum selektiven Kompilieren
+ *
+ * Du solltest zusammen mit diesem Programm eine Kopie der MIT-Lizenz erhalten haben.
+ * Falls nicht, sieh bitte hier nach: https://opensource.org/licenses/MIT.
+ *
+ * http://www.thefearlessengineer.com/cpp-kurs
+ * ----------------------------------------------------------------------
+ */
+
 // Liste aller eingebundenen Bibliotheken
 #include <iostream>
 #include <string>
@@ -10,11 +25,16 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    // Operanden und Operator als Zeichenketten einlesen
+    // Einfache Prüfung auf richtige Parameteranzahl
+    if (argc < 3)
+    {
+        cout << "Fehler: Parameteranzahl zu niedrig.\n";
+        return -1;
+    }
 
     // Operanden in Zahlen umwandeln
     double operand1 = atof(argv[1]);
-    double operand2 = atof(argv[3]);
+    double operand2 = atof(argv[3]); // Hier können Zugriffsverletzungen auftreten -> siehe Aufgabe 1
 
     // Berechnung je nach Art des Operators ausführen
     string operator1 = argv[2];

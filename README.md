@@ -1,13 +1,15 @@
-# Projekt für Einsteiger in C++ : Verschlüsseln von Text mit while-Schleife und if-else-Verzweigung
+# Projekt für Einsteiger in C++ : Entwicklung eines Taschenrechners
 
 [The Fearless Engineer : `C++`](https://www.thefearlessengineer.com/cpp-kurs)
 
 
 ## Worum geht es?
 
-Dieses Projekt ist Teil eines Online-Kurses zur Programmiersprache C++. Der Code liest Text von der Konsole ein, und verschlüsselt den Text Zeichen für Zeichen in einer Schleife. Ziel ist es, den Umgang mit if-else-Verzweigungen und der while-Schleife zu üben.
+Dieses Projekt ist Teil eines Online-Kurses zur Programmiersprache C++. Der Code liest Parameter von der Kommandozeile im Terminal ein, konvertiert diese in Operator und Operanden und rechnet dann entsprechend dem eingegebenen Operator das Ergebnis aus. 
 
-*Hinweis*: Das zugehörige Begleitheft inkl. der Links zu den Videos findest du [hier](https://go.tfe.academy/2010163).
+Lernziele sind das Einlesen und Verarbeiten von Parametern vom Terminal sowie die Verwendung des Präprozessors zum selektiven Kompilieren
+
+Unter [www.thefearlessengineer.com/cpp-kurs-e2](https://www.thefearlessengineer.com/cpp-kurs-e2) findest du die zugehörigen Videos sowie ein ausführliches Begleit-PDF.
 
 
 ---
@@ -18,16 +20,16 @@ Dieses Projekt ist Teil eines Online-Kurses zur Programmiersprache C++. Der Code
 
 Der einfachste Weg, den Code auszuführen und zu verändern, ist über die Online-IDE `repl.it`. Um die jeweiligen Programme zu kompilieren und auszuführen, musst du nur den jeweiligen Befehl im Terminal eingeben.
 
-1. **Haupt-Programm** (`encode.cpp`) :  
-`g++ -o encode encode.cpp; ./encode`
+1. **Haupt-Programm** (`rechne.cpp`) :  
+`g++ -o rechne rechne.cpp; ./rechne 10.5 plus 1.5`
 
 2. **Übungen**
    
    - **Übung 1** (`exercises/exe_01/exe_01.cpp`) : 
-   `g++ -o exe_01 ./exercises/exe_01/exe_01.cpp; ./exe_01`
+   `g++ -o rechne ./exercises/exe_01/exe_01.cpp; ./rechne sinus-von 3.14`
 
    - **Übung 2** (`exercises/exe_02/exe_02.cpp`) : 
-   `g++ -o exe_02 ./exercises/exe_02/exe_02.cpp; ./exe_02`
+   `g++ -o rechne ./exercises/exe_02/exe_02.cpp; ./rechne 10 geteilt-durch 5`
 
 <br> 
 
